@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('13',function(){
+  echo "Toi la Vu Van Thang";
+});
