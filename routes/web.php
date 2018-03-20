@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//use App\TheLoai;
 
 Route::get('/', function () {
     return view('welcome');
@@ -76,4 +77,10 @@ Route::get('qd/update',function(){
 
 Route::get('qd/addselect',function(){
   DB::table('users')->truncate();
+});
+
+
+Route::get('thu',function (){
+    $theloai = \App\Comment::all();
+    echo $theloai->NoiDung;
 });
